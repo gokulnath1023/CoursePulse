@@ -1,0 +1,330 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(0, 123, 255) ;
+}
+.navbar img{
+    width:200px;
+    height: fit-content;
+    cursor: pointer;
+}
+.navbar-ul1{
+    display: flex;
+}
+.navbar .navbar-ul1 li{
+    list-style: none;
+    color: white;
+    padding-right: 30px;
+    padding-top: 15px;
+    cursor: pointer;
+    
+    
+}
+.navbar .navbar-ul1 li:hover{
+    color: red;
+    font-weight: bold;
+}
+.continer1{
+    width: 100%;
+    height: 500px;
+    background-image: url(images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.continer1 h1{
+    font-weight: bold;
+    font-size: 70px;
+}
+.continer1 p{
+    align-self: center;
+}
+.continer1 button{
+    width: 190px;
+    height: 50px;
+    font-size: xx-large;
+    font-weight: bold;
+    border: none;
+    border-radius: 70px;
+    color: yellow;
+    background-color: blue;
+}
+.continer1 button:hover{
+    background-color: yellow;
+    color: blue;
+}
+.continer2{
+    padding-top: 40px;
+    width: 100%;
+}
+.continer2 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6px;
+    box-shadow: 50px black;
+    
+}
+.continer2 div img{
+    width: 300px;
+    height: 180px;
+    border-radius: 20px;
+}
+.continer2 div img:hover{
+    box-shadow: 0.1px 0.1px 30px 1px rgba(25, 2, 117, 0.626);
+}
+.continer2 div button{
+    width: 120px;
+    height: 50px;
+    font-size:large;
+    font-weight: bold;
+    border: none;
+    border-radius: 70px;
+    color: yellow;
+    background-color: blue;
+}
+.continer3{
+    width: 100%;
+}
+.continer31{
+    width: 45%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.continer32{
+    width: 45%;
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+.continer32 form input{
+    width: 300px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.404);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
+.continer32 form textarea{
+    width: 300px;
+    height: 90px;
+    background-color: rgba(0, 0, 255, 0.404);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
+select{
+    width: 200px;
+    height: 35px;
+    background-color: rgba(0, 0, 255, 0.404);
+    align-self: start;
+}
+.contact-form form input{
+    width: 300px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.404);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
+.contact-form form textarea{
+    width: 300px;
+    height: 90px;
+    background-color: rgba(0, 0, 255, 0.404);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
+
+
+
+/* About page */
+.ab_continer2{
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+    background-color: rgb(179, 179, 179);
+}
+.ab_continer21{
+    width:60%;
+    float: left;
+    padding-left: 50px;
+    margin-top: 70px;
+}
+.ab_continer22{
+    width:40%;
+    float: right;
+}
+.ab_continer22 img{
+    width: 600px;
+    border-radius: 400px;
+}
+.ab_continer3{
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+    background-color: rgb(159, 161, 196);
+}
+.ab_continer31{
+    width:40%;
+    float: left;
+}
+.ab_continer31 img{
+    width: 600px;
+    border-radius: 400px;
+}
+.ab_continer32{
+    width:60%;
+    float: right;
+    padding-left: 50px;
+    margin-top: 70px;
+}
+.ab_continer4{
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.ab_continer4 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6px;
+    box-shadow: 50px black;
+    
+}
+.ab_continer4 div img{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+
+/* Lesson Page */
+.lesson_continer1{
+    width: 100%;
+    font-weight: 300px;
+    padding: 30px;
+
+}
+.lesson_continer1 img{
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
+.lesson_continer1 h1{
+    color: rgb(55, 0, 255);
+}
+.lesson_continer1 button{
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(rgb(0, 247, 255),rgb(3, 16, 255));
+    color: white;
+    margin-top: 40px;
+}
+.lesson_continer1 button:hover{
+    background: linear-gradient(rgb(3, 16, 255),rgb(0, 247, 255));
+}
+.lesson_continer2{
+    margin: 40px;
+}
+.lesson_continer2 li{
+    padding: 6px;
+}
+
+
+
+/* register page */
+.reg_body{
+    background: url(images/reg_back.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.reg{
+    width: 100%;
+    height: 750px;
+}
+.reg_div1{
+    width: 40%;
+    height: 500px;
+    margin: 30px;
+    float: left;
+    background-color: rgba(0, 255, 255, 0.645);
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+.reg form{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.reg form label{
+    font-weight: bolder;
+    margin: 10px;
+}
+.reg form input{
+    background-color: rgb(204, 179, 227);
+    height: 40px;
+    width: 450px;
+}
+.reg form button{
+    height: 40px;
+    width: 80px;
+    border: none;
+    color: white;
+    background-color: blue;
+    margin-top: 20px;
+    border-radius: 9px;
+}
+.reg_div2{
+    width: 40%;
+    margin: 30px;
+    height: 500px;
+    float: right;
+    background-color: rgba(0, 255, 255, 0.645);
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+
+
+
+
+.footer1{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+
+}
+.footer1 li{
+    list-style: none;
+}
+.footer2{
+    background-color: rgb(28, 26, 26);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position:relative;
+    bottom: 0%;
+
+}

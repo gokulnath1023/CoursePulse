@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Nov 13, 2024 at 08:18 AM
+- Server version: 10.4.32-MariaDB
+- PHP Version: 8.2.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="courspulse" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="course">
+                CREATE TABLE `course` (
+                  `course_id` int(15) NOT NULL,
+                  `course_name` varchar(255) NOT NULL,
+                  `course_image` varchar(255) NOT NULL,
+                  `course_lessson1` varchar(255) NOT NULL,
+                  `course_lessson2` varchar(255) NOT NULL,
+                  `course_lessson3` varchar(255) NOT NULL,
+                  `course_lessson4` varchar(255) NOT NULL,
+                  `course_lessson5` varchar(255) NOT NULL,
+                  `course_description` mediumtext NOT NULL,
+                  `course_lessson1_description` mediumtext NOT NULL,
+                  `course_lessson2_description` mediumtext NOT NULL,
+                  `course_lessson3_description` mediumtext NOT NULL,
+                  `course_lessson4_description` mediumtext NOT NULL,
+                  `course_lessson5_description` mediumtext NOT NULL,
+                  `video1` varchar(255) NOT NULL,
+                  `video2` varchar(255) NOT NULL,
+                  `video3` varchar(255) NOT NULL,
+                  `video4` varchar(255) NOT NULL,
+                  `video5` varchar(255) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="c_video">
+                CREATE TABLE `c_video` (
+                  `video1` varchar(255) NOT NULL,
+                  `video2` varchar(255) NOT NULL,
+                  `video3` varchar(255) NOT NULL,
+                  `video4` varchar(255) NOT NULL,
+                  `video5` varchar(255) NOT NULL,
+                  `video6` varchar(255) NOT NULL,
+                  `video7` varchar(255) NOT NULL,
+                  `video8` varchar(255) NOT NULL,
+                  `video9` varchar(255) NOT NULL,
+                  `course_id` int(11) NOT NULL,
+                  `course_name` int(11) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `user_name` varchar(25) DEFAULT NULL,
+                  `email` varchar(255) NOT NULL,
+                  `password` varchar(255) NOT NULL,
+                  `verify_token` varchar(255) NOT NULL,
+                  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'courspulse'
+    -->
+    <database name="courspulse">
+        <!-- Table course -->
+        <table name="course">
+            <column name="course_id">1</column>
+            <column name="course_name">HTML</column>
+            <column name="course_image">images/html.jpg</column>
+            <column name="course_lessson1">Header</column>
+            <column name="course_lessson2">Image</column>
+            <column name="course_lessson3">Button</column>
+            <column name="course_lessson4">Table</column>
+            <column name="course_lessson5">Form</column>
+            <column name="course_description">HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.</column>
+            <column name="course_lessson1_description">The header HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</column>
+            <column name="course_lessson2_description">In order to put a simple image on a web page, we use the img element. This is a void element (meaning, it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt . The src attribute contains a URL pointing to the image you want to embed in the page.</column>
+            <column name="course_lessson3_description">The button element is used to create an HTML button. Any text appearing between the opening and closing tags will appear as text on the button.</column>
+            <column name="course_lessson4_description">Definition and Usage. The table tag defines an HTML table. An HTML table consists of one table element and one or more tr, th, and td elements. The tr element defines a table row, the th element defines a table header, and the td element defines a table cell.</column>
+            <column name="course_lessson5_description">An HTML form is a section of a document containing normal content, markup, special elements called controls (checkboxes, radio buttons, menus, etc.), and labels on those controls.</column>
+            <column name="video1">videos/html/html1.mp4</column>
+            <column name="video2">videos/html/html2.mp4</column>
+            <column name="video3">videos/html/html3.mp4</column>
+            <column name="video4">videos/html/html4.mp4</column>
+            <column name="video5">videos/html/html5.mp4</column>
+        </table>
+        <table name="course">
+            <column name="course_id">2</column>
+            <column name="course_name">CSS</column>
+            <column name="course_image">images/css.jpg</column>
+            <column name="course_lessson1">CSS Colors</column>
+            <column name="course_lessson2">CSS Backgrounds</column>
+            <column name="course_lessson3">CSS Margins</column>
+            <column name="course_lessson4">CSS Layout</column>
+            <column name="course_lessson5">CSS Align</column>
+            <column name="course_description">CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files</column>
+            <column name="course_lessson1_description">Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</column>
+            <column name="course_lessson2_description">The CSS background properties are used to add background effects for elements.</column>
+            <column name="course_lessson3_description">Margins are used to create space around elements, outside of any defined borders.</column>
+            <column name="course_lessson4_description">The display property is the most important CSS property for controlling layout.</column>
+            <column name="course_lessson5_description">CSS Layout - Horizontal &amp; Vertical Align</column>
+            <column name="video1">videos/css/css1.mp4</column>
+            <column name="video2">videos/css/css2.mp4</column>
+            <column name="video3">videos/css/css3.mp4</column>
+            <column name="video4">videos/css/css4.mp4</column>
+            <column name="video5">videos/css/css5.mp4</column>
+        </table>
+        <table name="course">
+            <column name="course_id">3</column>
+            <column name="course_name">BOOTSTRAP</column>
+            <column name="course_image">images/bootstrap.jpg</column>
+            <column name="course_lessson1">Bootstrap Containers</column>
+            <column name="course_lessson2">Bootstrap Buttons</column>
+            <column name="course_lessson3">Bootstrap Grids</column>
+            <column name="course_lessson4">Bootstrap Tables</column>
+            <column name="course_lessson5">Bootstrap Cards</column>
+            <column name="course_description">Bootstrap 5 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, mobile-first websites.</column>
+            <column name="course_lessson1_description">Containers are used to pad the content inside of them, and there are two container classes available.</column>
+            <column name="course_lessson2_description">Button Styles Bootstrap 5 provides different styles of buttons.</column>
+            <column name="course_lessson3_description">Bootstrap grid system is built with flexbox and allows up to 12 columns across the page.</column>
+            <column name="course_lessson4_description">A basic Bootstrap 5 table has a light padding and horizontal dividers. The .table class adds basic styling to a table.</column>
+            <column name="course_lessson5_description">A card in Bootstrap 5 is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.</column>
+            <column name="video1">videos/bootstrap/bootstrap1.mp4</column>
+            <column name="video2">videos/bootstrap/bootstrap2.mp4</column>
+            <column name="video3">videos/bootstrap/bootstrap3.mp4</column>
+            <column name="video4">videos/bootstrap/bootstrap4.mp4</column>
+            <column name="video5">videos/bootstrap/bootstrap5.mp4</column>
+        </table>
+        <table name="course">
+            <column name="course_id">4</column>
+            <column name="course_name">JAVASCRIPT</column>
+            <column name="course_image">images/javascript.png</column>
+            <column name="course_lessson1">JavaScript Introduction</column>
+            <column name="course_lessson2">JavaScript Variables</column>
+            <column name="course_lessson3">JavaScript Syntax</column>
+            <column name="course_lessson4">JavaScript Functions</column>
+            <column name="course_lessson5">JavaScript Data Types</column>
+            <column name="course_description">In JavaScript, the syntax is used within template literals, also known as template strings. Template literals, introduced in ECMAScript 6 (ES6), provide a convenient way to create strings with embedded expressions.</column>
+            <column name="course_lessson1_description">In JavaScript, the ${} syntax is used within template literals, also known as template strings. Template literals, introduced in ECMAScript 6 (ES6), provide a convenient way to create strings with embedded expressions.</column>
+            <column name="course_lessson2_description">Variables are Containers for Storing Data JavaScript Variables can be declared in 4 ways.</column>
+            <column name="course_lessson3_description">JavaScript syntax is the set of rules, how JavaScript programs are constructed.</column>
+            <column name="course_lessson4_description">A JavaScript function is a block of code designed to perform a particular task.</column>
+            <column name="course_lessson5_description">String,Number,Bigint,Boolean,Undefined,Null,Symbol,Object</column>
+            <column name="video1">videos/javascript/javascript1.mp4</column>
+            <column name="video2">videos/javascript/javascript2.mp4</column>
+            <column name="video3">videos/javascript/javascript3.mp4</column>
+            <column name="video4">videos/javascript/javascript4.mp4</column>
+            <column name="video5">videos/javascript/javascript5.mp4</column>
+        </table>
+        <table name="course">
+            <column name="course_id">5</column>
+            <column name="course_name">PHP</column>
+            <column name="course_image">images/php.jpg</column>
+            <column name="course_lessson1">PHP Introduction</column>
+            <column name="course_lessson2">PHP Syntax</column>
+            <column name="course_lessson3">PHP Data Types</column>
+            <column name="course_lessson4">PHP Functions</column>
+            <column name="course_lessson5">PHP Arrays</column>
+            <column name="course_description">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</column>
+            <column name="course_lessson1_description">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</column>
+            <column name="course_lessson2_description">A PHP script is executed on the server, and the plain HTML result is sent back to the browser.</column>
+            <column name="course_lessson3_description">Variables can store data of different types, and different data types can do different things.</column>
+            <column name="course_lessson4_description">PHP has more than 1000 built-in functions, and in addition you can create your own custom functions.</column>
+            <column name="course_lessson5_description">An array is a special variable that can hold many values under a single name, and you can access the values by referring to an index number or name.</column>
+            <column name="video1">videos/php/php1.mp4</column>
+            <column name="video2">videos/php/php2.mp4</column>
+            <column name="video3">videos/php/php3.mp4</column>
+            <column name="video4">videos/php/php4.mp4</column>
+            <column name="video5">videos/php/php5.mp4</column>
+        </table>
+        <table name="course">
+            <column name="course_id">6</column>
+            <column name="course_name">MYSQL</column>
+            <column name="course_image">images/mysql.png</column>
+            <column name="course_lessson1">Introduction to SQL</column>
+            <column name="course_lessson2">SQL CREATE </column>
+            <column name="course_lessson3">SQL UPDATE</column>
+            <column name="course_lessson4">SQL DELETE</column>
+            <column name="course_lessson5">SQL SELECT</column>
+            <column name="course_description">SQL is a standard language for storing, manipulating and retrieving data in databases.</column>
+            <column name="course_lessson1_description">The syntax for the CREATE TABLE statement is as follows: CREATE TABLE table_name ( column1 datatype constraints, column2 datatype constraints, ... columnN datatype constraints )</column>
+            <column name="course_lessson2_description">The INSERT INTO statement is used to insert new records in a table.</column>
+            <column name="course_lessson3_description">The UPDATE statement is used to modify the existing records in a table.</column>
+            <column name="course_lessson4_description">The DELETE statement is used to delete existing records in a table.</column>
+            <column name="course_lessson5_description">The SELECT TOP clause is useful on large tables with thousands of records. Returning a large number of records can impact performance.</column>
+            <column name="video1">videos/mysql/mysql1.mp4</column>
+            <column name="video2">videos/mysql/mysql2.mp4</column>
+            <column name="video3">videos/mysql/mysql3.mp4</column>
+            <column name="video4">videos/mysql/mysql4.mp4</column>
+            <column name="video5">videos/mysql/mysql5.mp4</column>
+        </table>
+        <table name="course">
+            <column name="course_id">7</column>
+            <column name="course_name">JAVA</column>
+            <column name="course_image">images/java.png</column>
+            <column name="course_lessson1">Java Introduction</column>
+            <column name="course_lessson2">Java Syntax</column>
+            <column name="course_lessson3">Java Variables</column>
+            <column name="course_lessson4">Java Data Types</column>
+            <column name="course_lessson5">Java Operators</column>
+            <column name="course_description">Java is a popular programming language.</column>
+            <column name="course_lessson1_description">Java is a programming language and computing platform that used to create a variety of applications, including,</column>
+            <column name="course_lessson2_description">In the previous chapter, we created a Java file called Main.java, and we used the following code to print &quot;Hello World&quot; to the screen.</column>
+            <column name="course_lessson3_description">Variables are containers for storing data values.</column>
+            <column name="course_lessson4_description">As explained in the previous chapter, a variable in Java must be a specified data type,</column>
+            <column name="course_lessson5_description">Operators are used to perform operations on variables and values.</column>
+            <column name="video1">videos/java/java1.mp4</column>
+            <column name="video2">videos/java/java2.mp4</column>
+            <column name="video3">videos/java/java3.mp4</column>
+            <column name="video4">videos/java/java4.mp4</column>
+            <column name="video5">videos/java/java5.mp4</column>
+        </table>
+        <table name="course">
+            <column name="course_id">8</column>
+            <column name="course_name">PYTHON</column>
+            <column name="course_image">imageS/python.jpeg</column>
+            <column name="course_lessson1">Python Introduction</column>
+            <column name="course_lessson2">Python Syntax</column>
+            <column name="course_lessson3">Python Variables</column>
+            <column name="course_lessson4">Python Data Types</column>
+            <column name="course_lessson5">Python Operators</column>
+            <column name="course_description">Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</column>
+            <column name="course_lessson1_description">Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</column>
+            <column name="course_lessson2_description">As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line.</column>
+            <column name="course_lessson3_description">Variables are containers for storing data values.</column>
+            <column name="course_lessson4_description">In programming, data type is an important concept. Variables can store data of different types, and different types can do different things.</column>
+            <column name="course_lessson5_description">Operators are used to perform operations on variables and values.</column>
+            <column name="video1">videos/python/python1.mp4</column>
+            <column name="video2">videos/python/python2.mp4</column>
+            <column name="video3">videos/python/python3.mp4</column>
+            <column name="video4">videos/python/python4.mp4</column>
+            <column name="video5">videos/python/python5.mp4</column>
+        </table>
+        <!-- Table c_video -->
+        <table>
+            <column name="python">PYTHON</column>
+            <column name="html">HTML</column>
+            <column name="css">CSS</column>
+            <column name="javascript">JAVASCRIPT</column>
+            <column name="php">PHP</column>
+            <column name="mysql">MYSQL</column>
+        </table>
+        <!-- Table user -->
+        <table name="user">
+            <column name="user_name">gokul</column>
+            <column name="email">gokulnathgokulnath038@gmail.com</column>
+            <column name="password">12345</column>
+            <column name="verify_token"></column>
+            <column name="created_at">2024-11-10 15:36:11</column>
+        </table>
+        <table name="user">
+            <column name="user_name">gokulnath</column>
+            <column name="email">gokulnathgokulnath07@gmail.com</column>
+            <column name="password">12gokul12</column>
+            <column name="verify_token"></column>
+            <column name="created_at">2024-11-10 17:22:48</column>
+        </table>
+        <table name="user">
+            <column name="user_name">gokulnath</column>
+            <column name="email">gokulnathgokulnath07@gmail.com</column>
+            <column name="password">12gokul12</column>
+            <column name="verify_token"></column>
+            <column name="created_at">2024-11-10 17:48:21</column>
+        </table>
+    </database>
+</pma_xml_export>
